@@ -1,0 +1,4 @@
+.snowpack
+build
+release
+node_modules

@@ -1,0 +1,33 @@
+{
+	"productName": "electron-snowpack-react-typescript",
+	"directories": {
+		"output": "release/"
+	},
+	"files": [
+		"build/**/*",
+		"src/main/**/*"
+	],
+	"win": {
+		"icon": "build/assets/icons",
+		"target": [
+			{
+				"target": "nsis",
+				"arch": [
+					"ia32"
+				]
+			}
+		]
+	},
+	"mac": {
+		"icon": "build/assets/icons",
+		"target": [
+			"dmg"
+		]
+	},
+	"linux": {
+		"icon": "build/assets/icons",
+		"target": [
+			"AppImage"
+		]
+	}
+}
