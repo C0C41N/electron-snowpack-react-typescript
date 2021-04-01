@@ -16,11 +16,12 @@ module.exports = {
     treeshake: true,
   },
   alias: {
-    '@assets': './src/renderer/assets',
     '@app': './src/renderer',
   },
   routes: [],
   packageOptions: {},
   devOptions: {},
-  buildOptions: {},
+  buildOptions: {
+    baseUrl: './',
+  },
 };

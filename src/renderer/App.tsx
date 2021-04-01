@@ -2,7 +2,7 @@ import './App.css';
 
 import React, { useEffect, useState } from 'react';
 
-import logo from '@assets/logo.svg';
+const logo = './assets/logo.svg';
 
 interface AppProps {}
 
