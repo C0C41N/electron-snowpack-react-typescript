@@ -1,6 +1,8 @@
 # electron-snowpack-react-typescript
 
-> Electron app powered by snowpack using react + typescript
+Electron app powered by snowpack using react + typescript
+
+`git clone https://github.com/C0C41N/electron-snowpack-react-typescript`
 
 ## Available Scripts
 
