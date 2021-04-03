@@ -7,7 +7,6 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@assets/*": ["src/renderer/assets/*"],
       "@app/*": ["src/renderer/*"]
     },
     "noEmit": true,

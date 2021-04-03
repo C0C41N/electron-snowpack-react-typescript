@@ -1002,10 +1002,10 @@ electron-publish@22.10.5:
     lazy-val "^1.0.4"
     mime "^2.5.0"
 
-electron-snowpack-plugin@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/electron-snowpack-plugin/-/electron-snowpack-plugin-1.1.0.tgz#b6fe88444f2af69bda0c5e28a11b21ecfb0942cf"
-  integrity sha512-2NPFV+4RRmyucwNs/c942823nn6DUz+FyjXqS8l+tA37yW5ACHIdYvgZjaqiVkKjA6ztia3z+pyM2myeKgX1Eg==
+electron-snowpack-plugin@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/electron-snowpack-plugin/-/electron-snowpack-plugin-1.12.0.tgz#3c7d962ec3f515c8f90e7b92aaf1d4256d2e701f"
+  integrity sha512-LzDBb3/tvdeje8LC4YBakDex2kQPxKClNFpDpWeyZN/lwC2u6C2KIbzPVjsHN4ob9QFm2dZdf7DLN5bxTtl49g==
   dependencies:
     execa "^5.0.0"
     fs "^0.0.1-security"
