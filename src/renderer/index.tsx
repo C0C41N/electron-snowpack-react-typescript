@@ -4,14 +4,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
+import { Provider, services } from './services';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+		<Provider value={services}>
+			<App />
+		</Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
 
-if (import.meta.hot) {
-  import.meta.hot.accept();
-}
+import.meta.hot && import.meta.hot.accept();

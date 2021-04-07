@@ -1,4 +1,5 @@
 .snowpack
+.log
 build
 release
 node_modules

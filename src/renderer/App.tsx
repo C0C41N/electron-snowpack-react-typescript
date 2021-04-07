@@ -2,20 +2,27 @@ import './App.css';
 
 import React, { useEffect, useState } from 'react';
 
-// import {  } from 'electron';
+import { useLog, useNative } from './services';
 
 const logo = './assets/logo.svg';
 
 interface AppProps {}
 
 function App({}: AppProps) {
-
   const [count, setCount] = useState(0);
+  const { log, cls } = useLog();
+  const { app } = useNative();
+  const { getAppPath } = app;
 
-	useEffect(() => {
+  useEffect(() => {
+    cls();
+    log(getAppPath());
+  }, []);
+
+  useEffect(() => {
     const timer = setTimeout(() => setCount(count + 1), 1000);
     return () => clearTimeout(timer);
-  }, [count, setCount]);
+  });
 
   return (
     <div className="App">

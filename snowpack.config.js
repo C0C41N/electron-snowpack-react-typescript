@@ -1,4 +1,5 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
+
 module.exports = {
   mount: {
     public: { url: '/', static: true },
@@ -16,12 +17,15 @@ module.exports = {
     treeshake: true,
   },
   alias: {
+    '@services': './src/renderer/services',
     '@app': './src/renderer',
   },
-  routes: [],
-  packageOptions: {},
-  devOptions: {},
   buildOptions: {
     baseUrl: './',
   },
+  devOptions: {
+    open: 'none',
+  },
+  routes: [],
+  packageOptions: {},
 };
