@@ -2,7 +2,7 @@ import './App.css';
 
 import React, { useEffect, useState } from 'react';
 
-import { useLog, useNative } from './services';
+import { useLog } from './services';
 
 const logo = './assets/logo.svg';
 
@@ -11,12 +11,10 @@ interface AppProps {}
 function App({}: AppProps) {
   const [count, setCount] = useState(0);
   const { log, cls } = useLog();
-  const { app } = useNative();
-  const { getAppPath } = app;
 
   useEffect(() => {
     cls();
-    log(getAppPath());
+    log('Hello World!');
   }, []);
 
   useEffect(() => {
