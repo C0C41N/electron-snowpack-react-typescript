@@ -8,12 +8,5 @@ export const services = { svcNative, svcLog };
 const context = createContext(services);
 export const { Provider } = context;
 
-export const useLog = () => {
-  const contextService = useContext(context);
-  return contextService.svcLog;
-};
-
-export const useNative = () => {
-  const contextService = useContext(context);
-  return contextService.svcNative;
-};
+export const useLog = () => useContext(context).svcLog;
+export const useNative = () => useContext(context).svcNative;
