@@ -5,7 +5,7 @@
 	},
 	"files": [
 		"build/**/*",
-		"src/main/**/*"
+		"main.js"
 	],
 	"win": {
 		"icon": "build/assets/icons",

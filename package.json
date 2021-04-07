@@ -2,7 +2,7 @@
 	"name": "electron-snowpack-react-typescript",
 	"version": "1.0.0",
 	"description": "Electron app powered by snowpack using react + typescript",
-	"main": "src/main/index.js",
+	"main": "main.js",
 	"author": "C0C41N",
 	"license": "MIT",
 	"scripts": {

@@ -3,7 +3,7 @@
 module.exports = {
   mount: {
     public: { url: '/', static: true },
-    'src/renderer': { url: '/' },
+    src: { url: '/' },
   },
   plugins: [
     '@snowpack/plugin-react-refresh',
@@ -17,8 +17,8 @@ module.exports = {
     treeshake: true,
   },
   alias: {
-    '@services': './src/renderer/services',
-    '@app': './src/renderer',
+    '@services': './src/services',
+    '@app': './src',
   },
   buildOptions: {
     baseUrl: './',
