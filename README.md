@@ -9,7 +9,6 @@ Electron app powered by snowpack using react + typescript
 ### yarn start
 
 Runs the app in the development mode.
-(both web and electron)
 
 ### yarn build
 
